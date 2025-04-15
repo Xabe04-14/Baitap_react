@@ -1,0 +1,8 @@
+arrow function
+ES6 Chuẩn hóa lại ngôn ngữ để 
+có hai cách để định nghĩa component
++ dùng function component arrow function 
++ dùng class component. Đây là cách cũ hơn
+
+
+
