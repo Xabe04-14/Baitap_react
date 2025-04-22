@@ -1,30 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from '../Headers/header';
-import Breadcrumb from '../Breadcrumb/breadcrumb';
-import Product from '../Product_shop/product';
-import Partner from '../Partner_logo/partner_logo';
+import RightContent from '../rightContent';
 import Footer from '../Footers/footer';
+import LeftContent from '../leftContent';
 
 function App() {
   return (
           <div>
-            {/* Page Preloder */}
-            <div id="preloder">
-              <div className="loader" />
-            </div>
             {/* Header Section Begin */}
           <Header></Header>
             {/* Header End */}
-            {/* Breadcrumb Section Begin */}
-          <Breadcrumb></Breadcrumb>
-            {/* Breadcrumb Section Begin */}
-            {/* Product Shop Section Begin */}
-            <Product></Product>
-            {/* Product Shop Section End */}
-            {/* Partner Logo Section Begin */}
-            <Partner></Partner>
-            {/* Partner Logo Section End */}
+            <LeftContent></LeftContent>
+         <RightContent></RightContent>
             {/* Footer Section Begin */}
             <Footer></Footer>
           </div>
@@ -33,3 +21,51 @@ function App() {
 
 
 export default App;
+
+// import Item from '../Item';
+// import NumberOne from '../NumberOne';
+// import logo from './logo.svg';
+
+// function App() {
+//   return (
+//           <div className="Container">
+//             <div className='row'>
+//             <Item 
+//             link="https://haycafe.vn/wp-content/uploads/2022/01/Hinh-anh-cute.jpg"
+//             title="Đây là áo gì đây"
+//             price="200"
+//             />
+//               <Item 
+//             link="https://haycafe.vn/wp-content/uploads/2022/01/Hinh-anh-cute.jpg"
+//             title="Đây là áo gì đây"
+//             price="200"
+//             />
+//                <Item 
+//             link="https://haycafe.vn/wp-content/uploads/2022/01/Hinh-anh-cute.jpg"
+//             title="Đây là áo gì đây"
+//             price="200"
+//             />
+//                <Item 
+//             link="https://haycafe.vn/wp-content/uploads/2022/01/Hinh-anh-cute.jpg"
+//             title="Đây là áo gì đây"
+//             price="200"
+//             />
+//                <Item 
+//             link="https://haycafe.vn/wp-content/uploads/2022/01/Hinh-anh-cute.jpg"
+//             title="Đây là áo gì đây"
+//             price="200"
+//             />
+//                <Item 
+//             link="https://haycafe.vn/wp-content/uploads/2022/01/Hinh-anh-cute.jpg"
+//             title="Đây là áo gì đây"
+//             price="200"
+//             />
+//               <NumberOne dai="300px" rong="200px" mau="yellow"
+//             />
+//             </div>
+//             </div>
+//         );
+//       }
+
+
+// export default App;
