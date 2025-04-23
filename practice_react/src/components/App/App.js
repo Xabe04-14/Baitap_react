@@ -1,26 +1,26 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import Header from '../Headers/header';
-import RightContent from '../rightContent';
-import Footer from '../Footers/footer';
-import LeftContent from '../leftContent';
+// import Header from '../Headers/header';
+// import RightContent from '../rightContent';
+// import Footer from '../Footers/footer';
+// import LeftContent from '../leftContent';
 
-function App() {
-  return (
-          <div>
-            {/* Header Section Begin */}
-          <Header></Header>
-            {/* Header End */}
-            <LeftContent></LeftContent>
-         <RightContent></RightContent>
-            {/* Footer Section Begin */}
-            <Footer></Footer>
-          </div>
-        );
-      }
+// function App() {
+//   return (
+//           <div>
+//             {/* Header Section Begin */}
+//           <Header></Header>
+//             {/* Header End */}
+//             <LeftContent></LeftContent>
+//          <RightContent></RightContent>
+//             {/* Footer Section Begin */}
+//             <Footer></Footer>
+//           </div>
+//         );
+//       }
 
 
-export default App;
+// export default App;
 
 // import Item from '../Item';
 // import NumberOne from '../NumberOne';
@@ -68,4 +68,31 @@ export default App;
 //       }
 
 
-// export default App;
+//  export default App;
+
+import React, { Component } from 'react'
+import StateDemo from '../state/stateDemo';
+import DemosetState from '../state/DemosetState';
+import ViduSetstate from '../state/vidu3';
+import Area from '../state/Area';
+import Camera_shop_class from '../state/camera_shop_class';
+import Camera_func from '../state/Camera_func';
+import ProductListClass from '../ProductListClass';
+import ProductListFunction from '../ProductListFunc';
+
+export default class App extends Component {
+
+  render() {
+    return (
+      <div>
+        {/* <StateDemo/>
+       <DemosetState/>
+       <ViduSetstate></ViduSetstate> */}
+       {/* <Area></Area> */}
+       {/* <Camera_shop_class/> */}
+     {/* <ProductListFunction/> */}
+     <ProductListClass></ProductListClass>
+      </div>
+    )
+  }
+}
