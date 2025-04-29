@@ -79,6 +79,12 @@ import Camera_shop_class from '../state/camera_shop_class';
 import Camera_func from '../state/Camera_func';
 import ProductListClass from '../ProductListClass';
 import ProductListFunction from '../ProductListFunc';
+import Exform from '../forms/Exform';
+import Grade from '../forms/Grade';
+import Add from '../forms/Add';
+import MenuWithPayment from '../forms/MenuPayment';
+import Fashion from '../forms/Fashion';
+
 
 export default class App extends Component {
 
@@ -90,8 +96,14 @@ export default class App extends Component {
        <ViduSetstate></ViduSetstate> */}
        {/* <Area></Area> */}
        {/* <Camera_shop_class/> */}
+       {/* <Camera_func></Camera_func> */}
      {/* <ProductListFunction/> */}
-     <ProductListClass></ProductListClass>
+     {/* <ProductListClass></ProductListClass> */}
+     {/* <Exform></Exform> */}
+     {/* <Grade></Grade> */}
+     {/* <Add></Add> */}
+     <MenuWithPayment></MenuWithPayment>
+     {/* <Fashion></Fashion> */}
       </div>
     )
   }

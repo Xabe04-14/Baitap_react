@@ -6,6 +6,7 @@ class ProductListClass extends Component {
     super(props);
     this.state = {
       products: [],
+      searchKeyword: '', 
     };
   }
 
@@ -19,10 +20,31 @@ class ProductListClass extends Component {
       });
   }
 
+  handleSearchChange = (e) => {
+    this.setState({ searchKeyword: e.target.value });
+  }
+
   render() {
+    const { products, searchKeyword } = this.state;
+
+    const filteredProducts = products.filter(product =>
+      product.name.toLowerCase().includes(searchKeyword.toLowerCase())
+    );
+
+    const totalPrice = filteredProducts.reduce((sum, product) => sum + product.unit_price, 0);
+
     return (
-      <div>
+      <div style={{ padding: "0px 100px" }}>
         <h2>Danh sách sản phẩm</h2>
+
+        <input
+          type="text"
+          placeholder="Tìm theo tên sản phẩm..."
+          value={searchKeyword}
+          onChange={this.handleSearchChange}
+          style={{ marginBottom: '20px', padding: '8px', width: '300px' }}
+        />
+
         <table className="product-table">
           <thead>
             <tr>
@@ -33,7 +55,7 @@ class ProductListClass extends Component {
             </tr>
           </thead>
           <tbody>
-            {this.state.products.map(product => (
+            {filteredProducts.map(product => (
               <tr key={product.id}>
                 <td>{product.name}</td>
                 <td>{product.unit_price}</td>
@@ -44,10 +66,15 @@ class ProductListClass extends Component {
               </tr>
             ))}
           </tbody>
+          <tfoot>
+            <tr>
+              <td colSpan="4">Tổng giá các sản phẩm được tìm thấy: {totalPrice}</td>
+            </tr>
+          </tfoot>
         </table>
       </div>
     );
-  }  
+  }
 }
 
 export default ProductListClass;
