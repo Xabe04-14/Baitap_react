@@ -7,6 +7,7 @@ function data(dataName){
             name: "Awesome Soft Hat",
             category: "Thời trang nam",
             code: "L1931-414",
+            image:"https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQLpGHOvrKDBVC3gcZaxAiSjEI175J56ajTlasJIISP_EVap0fNjxZhZzeGPvU3KROOCO53tB3ivn-ToA57yG4ZyI5z-XKm9S_4Iel28PHdBfSS1DmrV0Y1mhqlEyf5SzATTNWaJw&usqp=CAc",
             price: "13.00",
             old_price: "15.00",
           },
@@ -55,42 +56,7 @@ function data(dataName){
             price: "18.00",
             old_price: "22.00",
           },
-  
-          {
-            id: "7",
-            name: "Lightweight Hoodie",
-            category: "Thời trang nam",
-            code: "L1931-417",
-            price: "32.00",
-            old_price: "40.00",
-          },
-    
-          {
-            id: "8",
-            name: "Warm Winter Coat",
-            category: "Thời trang nữ",
-            code: "B9154",
-            price: "85.00",
-            old_price: "100.00",
-          },
-     
-          {
-            id: "9",
-            name: "Elegant Dress Shirt",
-            category: "Thời trang nữ",
-            code: "L1931-418",
-            price: "40.00",
-            old_price: "50.00",
-          },
-     
-          {
-            id: "10",
-            name: "Comfortable Chinos",
-            category: "Thời trang nữ",
-            code: "B9155",
-            price: "30.00",
-            old_price: "35.00",
-          },
+          
         ];
      return products;
      default:
